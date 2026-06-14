@@ -27,9 +27,9 @@ document.querySelectorAll('.profile').forEach(profile => {
         const selected = profile.dataset.profile;
         if (selected === 'provider') {
             showRoast();
-        } else {
+        } else if (selected === 'nourisher') {
             localStorage.setItem('netflixProfile', selected);
-            console.log(`Selected profile: ${selected}`);
+            window.location.href = 'nourisher.html';
         }
     });
 });

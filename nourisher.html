@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Nourisher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Netflix+Sans:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body class="nourisher-page">
+    <header class="top-bar">
+        <div class="logo">NETFLIX</div>
+        <button class="back-btn" id="backBtn">← Back</button>
+    </header>
+
+    <nav class="nav-tabs">
+        <button class="nav-tab active" data-tab="shows">Shows</button>
+        <button class="nav-tab" data-tab="movies">Movies</button>
+        <button class="nav-tab" data-tab="new">New & Hot</button>
+        <button class="nav-tab" data-tab="categories">Categories ⌄</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-image" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22><defs><linearGradient id=%22g%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%22100%25%22><stop offset=%220%25%22 style=%22stop-color:%234fc3f7;stop-opacity:1%22 /><stop offset=%22100%25%22 style=%22stop-color:%230d47a1;stop-opacity:1%22 /></linearGradient></defs><rect width=%221200%22 height=%22600%22 fill=%22url(%23g)%22/><text x=%22600%22 y=%22300%22 font-size=%22120%22 font-weight=%22bold%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 fill=%22white%22 font-family=%22Arial%22>Water Girl Realm</text></svg>')">
+        </div>
+        <div class="hero-overlay">
+            <h1 class="hero-title">Water Girl Realm</h1>
+            <p class="hero-subtitle">Back in Formation</p>
+            <div class="hero-buttons">
+                <button class="play-btn">▶ Play</button>
+                <button class="list-btn">+ My List</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section class="content-section">
+        <h2 class="section-title">Trending Now</h2>
+        <div class="tiles-scroll">
+            <div class="tile" data-message="You've got this! 💪">
+                <div class="tile-image" style="background: linear-gradient(135deg, #4fc3f7 0%, #0d47a1 100%);"></div>
+                <p class="tile-label">Amazing</p>
+            </div>
+            <div class="tile" data-message="Keep shining! ✨">
+                <div class="tile-image" style="background: linear-gradient(135deg, #1de9b6 0%, #00695c 100%);"></div>
+                <p class="tile-label">Wonderful</p>
+            </div>
+            <div class="tile" data-message="You're a star! ⭐">
+                <div class="tile-image" style="background: linear-gradient(135deg, #26c6da 0%, #004d40 100%);"></div>
+                <p class="tile-label">Incredible</p>
+            </div>
+            <div class="tile" data-message="Never give up! 🎯">
+                <div class="tile-image" style="background: linear-gradient(135deg, #00bcd4 0%, #0277bd 100%);"></div>
+                <p class="tile-label">Unstoppable</p>
+            </div>
+            <div class="tile" data-message="You're the best! 🏆">
+                <div class="tile-image" style="background: linear-gradient(135deg, #4dd0e1 0%, #01579b 100%);"></div>
+                <p class="tile-label">Champion</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="content-section">
+        <h2 class="section-title">Water Goddess Collection</h2>
+        <div class="tiles-scroll">
+            <div class="tile" data-message="Flow like water! 💧">
+                <div class="tile-image" style="background: linear-gradient(135deg, #81d4fa 0%, #0288d1 100%);"></div>
+                <p class="tile-label">Flow</p>
+            </div>
+            <div class="tile" data-message="Be flexible! 🌊">
+                <div class="tile-image" style="background: linear-gradient(135deg, #b3e5fc 0%, #0277bd 100%);"></div>
+                <p class="tile-label">Adaptive</p>
+            </div>
+            <div class="tile" data-message="Make waves! 🌊">
+                <div class="tile-image" style="background: linear-gradient(135deg, #4fc3f7 0%, #01579b 100%);"></div>
+                <p class="tile-label">Bold</p>
+            </div>
+            <div class="tile" data-message="Stay pure! 💎">
+                <div class="tile-image" style="background: linear-gradient(135deg, #80deea 0%, #0288d1 100%);"></div>
+                <p class="tile-label">Pure</p>
+            </div>
+            <div class="tile" data-message="Go with the flow! 🌊">
+                <div class="tile-image" style="background: linear-gradient(135deg, #4dd0e1 0%, #00838f 100%);"></div>
+                <p class="tile-label">Natural</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="content-section">
+        <h2 class="section-title">Exclusive Fan-Favorite</h2>
+        <div class="tiles-scroll">
+            <div class="tile" data-message="You inspire others! 💫">
+                <div class="tile-image" style="background: linear-gradient(135deg, #00bcd4 0%, #004d40 100%);"></div>
+                <p class="tile-label">Inspiring</p>
+            </div>
+            <div class="tile" data-message="Your strength is boundless! 💪">
+                <div class="tile-image" style="background: linear-gradient(135deg, #26c6da 0%, #00695c 100%);"></div>
+                <p class="tile-label">Strength</p>
+            </div>
+            <div class="tile" data-message="Change the world! 🌍">
+                <div class="tile-image" style="background: linear-gradient(135deg, #80deea 0%, #0288d1 100%);"></div>
+                <p class="tile-label">Transform</p>
+            </div>
+            <div class="tile" data-message="You're divine! 👑">
+                <div class="tile-image" style="background: linear-gradient(135deg, #4fc3f7 0%, #0277bd 100%);"></div>
+                <p class="tile-label">Royal</p>
+            </div>
+            <div class="tile" data-message="Keep growing! 🌱">
+                <div class="tile-image" style="background: linear-gradient(135deg, #1de9b6 0%, #00695c 100%);"></div>
+                <p class="tile-label">Growth</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Modal -->
+    <div class="tile-modal" id="tileModal">
+        <div class="modal-content">
+            <p class="modal-message" id="modalMessage"></p>
+            <button class="modal-close" id="modalClose">✕</button>
+        </div>
+    </div>
+
+    <script src="nourisher.js"></script>
+</body>
+</html>
