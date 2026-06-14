@@ -3,11 +3,14 @@ document.getElementById('backBtn').addEventListener('click', () => {
     window.location.href = 'index.html';
 });
 
-// Nav tabs
-document.querySelectorAll('.nav-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-        document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
+// Pause/Resume scroll on hover
+document.querySelectorAll('.scroll-container').forEach(container => {
+    const scroll = container.querySelector('.tiles-scroll');
+    container.addEventListener('mouseenter', () => {
+        scroll.style.animationPlayState = 'paused';
+    });
+    container.addEventListener('mouseleave', () => {
+        scroll.style.animationPlayState = 'running';
     });
 });
 
